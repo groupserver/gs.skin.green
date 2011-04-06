@@ -29,6 +29,10 @@
     file="browser/css/site.css"
     layer=".interfaces.IGSGreenSkin"
     permission="zope2.Public" />
+  <browser:resource name="site-20110406.css"
+    file="browser/css/site.css"
+    layer=".interfaces.IGSGreenSkin"
+    permission="zope2.Public" />
   <!-- However, in the case of these two resources we want them to
   - be inherited, so we associtate them with IGSGreenLayer -->
   <browser:resource name="site-green-20101213.css"
