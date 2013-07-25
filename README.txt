@@ -16,31 +16,57 @@ A green skin for GroupServer
 Introduction
 ============
 
-A green skin for GroupServer. The This skin takes core layout and adds
-colour to the items.
+A green skin for GroupServer. The This skin takes the typeset page,
+provided by ``gs.content.css``, and adds colours_.
 
 Colours
 =======
 
-The colours are green, based on a tissue box that Dan likes.
+The most prominent colour is **hibiscus dream**, which is the background of
+the page heading, and the text colour of all the headers. The most *common*
+colour is **white,** which is the background of the page, followed by the
+body text, which is **lead** grey:
 
-=======   ==================  ============
-Colour     Use                 Description
-=======   ==================  ============
-#6c911d   Headings                   Green 
-#81a13d   Secondary Heading    Light Green 
-#324607   Visited Link          Dark Green 
-#5c791c   Borders             Medium Green
-#edf1e4   Link background       Pale Green
-=======   ==================  ============
++-------------+--------------------+-------------------------------------+
+| Colour      | Colour description | Use                                 |
++=============+====================+=====================================+
+| ``#ffffff`` | White              |   ``<heading>`` title               |
+|             |                    +-------------------------------------+
+|             |                    |   ``<body>`` background             |
++-------------+--------------------+-------------------------------------+
+| ``#fffff6`` | Fog white          |   Disabled ``<button>`` text        |
++-------------+--------------------+-------------------------------------+
+| ``#d9e8bd`` | Dusty green        |   ``<heading> <a>`` text            |
++-------------+--------------------+-------------------------------------+
+| ``#b4d07b`` | Lime mist          |   Borders,                          |
+|             |                    +-------------------------------------+
+|             |                    |   Disabled ``<button>`` background  |
+|             |                    +-------------------------------------+
+|             |                    |   Muted ``<heading>`` text          |
++-------------+--------------------+-------------------------------------+
+| ``#669900`` | **Hibiscus dream** |   ``<heading>`` background          |
+|             |                    +-------------------------------------+
+|             |                    |   ``<button>`` background           |
+|             |                    +-------------------------------------+
+|             |                    |   ``<h1>``, ``<h2>``, ``<h3>`` text |
+|             |                    +-------------------------------------+
+|             |                    |   ``<a>``                           |
++-------------+--------------------+-------------------------------------+
+| ``#667366`` | Lead               |   ``<body>`` text                   |
++-------------+--------------------+-------------------------------------+
+| ``#404d40`` | Liquefaction grey  |   ``<h4>`` text                     |
+|             |                    +-------------------------------------+
+|             |                    |   ``<strong>``                      |
++-------------+--------------------+-------------------------------------+
+| ``#3b6600`` | Midnight forest    |   ``<heading> <button>`` background |
++-------------+--------------------+-------------------------------------+
 
-jQuery
-======
+Authors
+=======
 
-A snippet of a jQuery.UI module is define here. Most of the module
-is defined by the ``gs.content.javascript.jquery`` product. The
-``Products.GSProfile`` product defines the CSS layout (using a black and
-white colour scheme). This module defiles some *colours* for jQuery.UI.
+Mike Harding from `Cactus Lab`_ performed the design work, based on colours
+from a tissue box that Dan_ likes. The CSS coding and egg creation, was by
+`Michael JasonSmith`_.
 
 Resources
 =========
@@ -55,3 +81,5 @@ Resources
 .. _Michael JasonSmith: http://groupserver.org/p/mpj17/
 .. _Creative Commons Attribution-Share Alike 3.0 New Zealand License:
    http://creativecommons.org/licenses/by-sa/3.0/nz/
+.. _Dan: http://groupserver.org/p/danr/
+.. _Cactus Lab: http://cactuslab.com/
