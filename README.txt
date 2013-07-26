@@ -38,6 +38,8 @@ body text, which is **lead** grey:
 |             |     |                    +-------------------------------------+
 |             |     |                    |   ``<button>`` borders              |
 +-------------+-----+--------------------+-------------------------------------+
+| ``#f0f6e5`` | |9| | Asylum grey        |   The ``<footer>`` background       |
++-------------+-----+--------------------+-------------------------------------+
 | ``#d9e8bd`` | |2| | Dusty green        |   ``<heading> <a>`` text            |
 |             |     |                    +-------------------------------------+
 |             |     |                    |   Borders between items             |
@@ -102,6 +104,10 @@ body text, which is **lead** grey:
 .. |8| raw:: html
 
   <span style="background:#3b6600;color:white;">&#160;Sample&#160;</style>
+
+.. |9| raw:: html
+
+  <span style="background:#f0f6e5;">&#160;Sample&#160;</style>
 
 Authors
 =======
