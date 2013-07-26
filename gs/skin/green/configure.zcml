@@ -28,9 +28,15 @@
   <browser:resource 
     name="site-20130725.css"
     file="browser/css/site.css"
-    layer=".interfaces.IGSGreenSkin"
+    layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
   <browser:resource 
+    name="site-20110714.css"
+    file="browser/css/site.css"
+    layer=".interfaces.IGSGreenLayer"
+    permission="zope2.Public" />
+
+  <!--browser:resource 
     name="site-20110714.css"
     file="browser/css/site.css"
     layer=".interfaces.IGSGreenSkin"
@@ -39,7 +45,7 @@
     name="site-20110714.css"
     file="browser/css/site.css"
     layer=".interfaces.IGSGreenSkin"
-    permission="zope2.Public" />
+    permission="zope2.Public" /-->
   <browser:resource 
     name="site-20110308.css"
     file="browser/css/site.css"
