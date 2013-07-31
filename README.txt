@@ -141,4 +141,4 @@ Resources
    http://creativecommons.org/licenses/by-sa/3.0/nz/
 .. _Dan: http://groupserver.org/p/danr/
 .. _Cactus Lab: http://cactuslab.com/
-.. _Twitter Bootstrap: http://getboostrap.com/
+.. _Twitter Bootstrap: http://getbootstrap.com/
