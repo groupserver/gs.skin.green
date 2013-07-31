@@ -7,7 +7,7 @@ A green skin for GroupServer
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-07-25
+:Date: 2013-07-31
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -113,12 +113,18 @@ body text, which is **lead** grey:
 
   <span style="background:#f0f6e5;">&#160;Sample&#160;</style>
 
+
+.. |a| raw:: html
+
+  <span style="background:#5d8c00;">&#160;Sample&#160;</style>
+
 Authors
 =======
 
 Mike Harding from `Cactus Lab`_ performed the design work, based on colours
 from a tissue box that Dan_ likes. The CSS coding and egg creation, was by
-`Michael JasonSmith`_.
+`Michael JasonSmith`_. Many of the CSS classes are from `Twitter
+Bootstrap`_.
 
 Resources
 =========
@@ -135,3 +141,4 @@ Resources
    http://creativecommons.org/licenses/by-sa/3.0/nz/
 .. _Dan: http://groupserver.org/p/danr/
 .. _Cactus Lab: http://cactuslab.com/
+.. _Twitter Bootstrap: http://getboostrap.com/
