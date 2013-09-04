@@ -1178,8 +1178,8 @@ button.close {
 
 /* GroupServer specific*/
 
-body {
-    background: #ffffff;
+body, #bodyblock, #gs-content-layout-body {
+    background: #fffff6;
 }
 body,
 .muted em,
