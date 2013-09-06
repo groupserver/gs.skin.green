@@ -7,7 +7,7 @@ A green skin for GroupServer
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-07-31
+:Date: 2013-09-06
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
   `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
@@ -16,8 +16,27 @@ A green skin for GroupServer
 Introduction
 ============
 
-A green skin for GroupServer. The This skin takes the typeset page,
-provided by ``gs.content.css``, and adds colours_.
+A green skin for GroupServer. The skin_ takes the typeset page, provided by
+``gs.content.css`` [#css]_, and adds some green colours_.  To use this skin
+specify it in the URL-rewrite rule for your site. For example::
+
+      rewrite /(.*) /++skin++gs_green/VirtualHostBase/http/$host:80/groupserver/Content/example_site/VirtualHostRoot/$1 break;
+
+Skin
+====
+
+This product provides the two interfaces and the named utility that
+constitute a basic skin:
+
+``gs.skin.green.interfaces.IGSGreenLayer``:
+    The layer, that all viewlets and pages should register against.
+
+``gs.skin.green.interfaces.IGSGreenSkin``:
+    The skin that inherits from ``IGSGreenLayer`` and the core Zope
+    ``Rotterdam`` skin.
+
+``gs_green``:
+    The named utility that provides the skin. 
 
 Colours
 =======
@@ -133,6 +152,7 @@ Resources
 - Questions and comments to http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
+.. [#css] See <https://source.iopen.net/groupserver/gs.content.css/>
 .. _GroupServer: http://groupserver.org/
 .. _GroupServer.org: http://groupserver.org/
 .. _OnlineGroups.Net: https://onlinegroups.net/
