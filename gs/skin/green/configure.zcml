@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <configure xmlns="http://namespaces.zope.org/zope"
            xmlns:browser="http://namespaces.zope.org/browser">
-  
+
+  <include package="zope.viewlet" file="meta.zcml" />
+
   <!--
       - A skin in made up of two interfaces: one for the skin itself and
       - one for the layer attached to the skin.
@@ -20,33 +22,25 @@
     component=".interfaces.IGSGreenSkin"
     provides="zope.publisher.interfaces.browser.IBrowserSkinType"
     name="gs_green" />
-  
+
   <!--
-      - The actual resources. Normally a resource is associated with a 
+      - The actual resources. Normally a resource is associated with a
       - skin, so they are not inherited. Pages are associated with layers.
+      - GS works a bit differently: CSS and associated resources are often
+      - inherited.
   -->
-  <browser:resource 
+  <browser:resource
     name="site-20130725.css"
     file="browser/css/site.css"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
-  <browser:resource 
+  <browser:resource
     name="site-20110714.css"
     file="browser/css/site.css"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
 
-  <!--browser:resource 
-    name="site-20110714.css"
-    file="browser/css/site.css"
-    layer=".interfaces.IGSGreenSkin"
-    permission="zope2.Public" />
-  <browser:resource 
-    name="site-20110714.css"
-    file="browser/css/site.css"
-    layer=".interfaces.IGSGreenSkin"
-    permission="zope2.Public" /-->
-  <browser:resource 
+  <browser:resource
     name="site-20110308.css"
     file="browser/css/site.css"
     layer=".interfaces.IGSGreenSkin"
@@ -60,13 +54,25 @@
        - be inherited, so we associtate them with IGSGreenLayer -->
   <browser:resource
     name="site-green-20101213.css"
-    file="browser/css/site.css" 
+    file="browser/css/site.css"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
-  <browser:resourceDirectory 
+  <browser:resourceDirectory
     name="jquery-icons"
-    directory="browser/jquery/css/ui-lightness/images/" 
+    directory="browser/jquery/css/ui-lightness/images/"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
+
+  <!--The viewlet to add the green colour to the Notifications css. -->
+  <browser:viewlet 
+    name="gs-skin-green-colour"
+    manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
+    layer=".interfaces.IGSGreenLayer"
+    class="gs.viewlet.SiteViewlet"
+    template="browser/templates/email.pt"
+    title="Green CSS"
+    weight="127"
+    permission="zope2.Public" />
+
 </configure>
 
