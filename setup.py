@@ -42,13 +42,15 @@ setup(name='gs.skin.green',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['gs', 'gs.skin'],
     include_package_data=True,
-    zip_safe=True,
+    zip_safe=False,
     install_requires=[
         'setuptools',
         'zope.app.rotterdam',
         'zope.browserresource',
         'zope.publisher',
+        'zope.viewlet',
         'gs.content.css',  # We depend on the core CSS
+        'gs.content.email.css',
     ],
     entry_points="""
     # -*- Entry points: -*-
