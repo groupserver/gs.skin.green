@@ -64,7 +64,7 @@
     permission="zope2.Public" />
 
   <!--The viewlet to add the green colour to the Notifications css. -->
-  <browser:viewlet 
+  <browser:viewlet
     name="gs-skin-green-colour"
     manager="gs.content.email.css.interfaces.IHTMLEmailStyle"
     layer=".interfaces.IGSGreenLayer"
@@ -75,4 +75,3 @@
     permission="zope2.Public" />
 
 </configure>
-
