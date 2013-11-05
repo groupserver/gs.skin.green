@@ -31,30 +31,30 @@
   -->
   <browser:resource
     name="site-20130725.css"
-    file="browser/css/site.css"
+    file="browser/css/site-min.css"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
   <browser:resource
     name="site-20110714.css"
-    file="browser/css/site.css"
+    file="browser/css/site-min.css"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
 
   <browser:resource
     name="site-20110308.css"
-    file="browser/css/site.css"
+    file="browser/css/site-min.css"
     layer=".interfaces.IGSGreenSkin"
     permission="zope2.Public" />
   <browser:resource
     name="site-20110406.css"
-    file="browser/css/site.css"
+    file="browser/css/site-min.css"
     layer=".interfaces.IGSGreenSkin"
     permission="zope2.Public" />
   <!-- However, in the case of these two resources we want them to
        - be inherited, so we associtate them with IGSGreenLayer -->
   <browser:resource
     name="site-green-20101213.css"
-    file="browser/css/site.css"
+    file="browser/css/site-min.css"
     layer=".interfaces.IGSGreenLayer"
     permission="zope2.Public" />
   <browser:resourceDirectory
