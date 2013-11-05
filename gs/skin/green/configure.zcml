@@ -30,6 +30,11 @@
       - inherited.
   -->
   <browser:resource
+    name="site-20131105.css"
+    file="browser/css/site-min.css"
+    layer=".interfaces.IGSGreenLayer"
+    permission="zope2.Public" />
+  <browser:resource
     name="site-20130725.css"
     file="browser/css/site-min.css"
     layer=".interfaces.IGSGreenLayer"
