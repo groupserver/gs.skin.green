@@ -398,6 +398,8 @@ strong,
 
 #toparea {
     background: #669900; /* Hibiscus dream*/
+}
+#titlebar {
     border-color: #b4d07b; /* Lime mist */
 }
 h3,
