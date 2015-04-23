@@ -7,26 +7,30 @@ A green skin for GroupServer
 
 :Author: `Michael JasonSmith`_
 :Contact: Michael JasonSmith <mpj17@onlinegroups.net>
-:Date: 2013-09-06
+:Date: 2014-04-23
 :Organization: `GroupServer.org`_
 :Copyright: This document is licensed under a
-  `Creative Commons Attribution-Share Alike 3.0 New Zealand License`_
-  by `OnlineGroups.Net`_.
+  `Creative Commons Attribution-Share Alike 4.0 International License`_
+  by `OnlineGroups.net`_.
+
+..  _Creative Commons Attribution-Share Alike 4.0 International License:
+    http://creativecommons.org/licenses/by-sa/4.0/
 
 Introduction
 ============
 
-A green skin for GroupServer. The skin_ takes the typeset page, provided by
-``gs.content.css`` [#css]_, and adds some green colours_.  To use this skin
-specify it in the URL-rewrite rule for your site. For example::
+A green skin for GroupServer. The skin_ takes the typeset page,
+provided by ``gs.content.css`` [#css]_, and adds some green
+colours_.  To use this skin specify it in the URL-rewrite rule
+for your site. For example::
 
       rewrite /(.*) /++skin++gs_green/VirtualHostBase/http/$host:80/groupserver/Content/example_site/VirtualHostRoot/$1 break;
 
 Skin
 ====
 
-This product provides the two interfaces and the named utility that
-constitute a basic skin:
+This product provides the two interfaces and the named utility
+that constitute a basic skin:
 
 ``gs.skin.green.interfaces.IGSGreenLayer``:
     The layer, that all viewlets and pages should register against.
@@ -41,10 +45,11 @@ constitute a basic skin:
 Colours
 =======
 
-The most prominent colour is **hibiscus dream**, which is the background of
-the page heading, and the text colour of all the headers. The most *common*
-colour is **white,** which is the background of the page, followed by the
-body text, which is **lead** grey:
+The most prominent colour is **hibiscus dream**, which is the
+background of the page heading, and the text colour of all the
+headers. The most *common* colour is **white,** which is the
+background of the page, followed by the body text, which is
+**lead** grey:
 
 +-------------+-----+--------------------+-------------------------------------+
 | Colour      | Eg. | Colour description | Use                                 |
@@ -140,19 +145,20 @@ body text, which is **lead** grey:
 Authors
 =======
 
-Mike Harding from `Cactus Lab`_ performed the design work, based on colours
-from a tissue box that Dan_ likes. The CSS coding and egg creation, was by
-`Michael JasonSmith`_. Many of the CSS classes are from `Twitter
-Bootstrap`_.
+Mike Harding from `Cactus Lab`_ performed the design work, based
+on colours from a tissue box that Dan_ likes. The CSS coding and
+egg creation, was by `Michael JasonSmith`_. Many of the CSS
+classes are from `Twitter Bootstrap`_.
 
 Resources
 =========
 
-- Code repository: https://source.iopen.net/groupserver/gs.skin.green/
-- Questions and comments to http://groupserver.org/groups/development
+- Code repository: https://github.com/groupserver/gs.skin.green
+- Questions and comments to
+  http://groupserver.org/groups/development
 - Report bugs at https://redmine.iopen.net/projects/groupserver
 
-.. [#css] See <https://source.iopen.net/groupserver/gs.content.css/>
+.. [#css] See <https://github.com/groupserver/gs.content.css/>
 .. _GroupServer: http://groupserver.org/
 .. _GroupServer.org: http://groupserver.org/
 .. _OnlineGroups.Net: https://onlinegroups.net/
