@@ -413,4 +413,9 @@ h3.small,
     color: #669900;  /* Hibiscus dream */
     background: #f0f6e5; /* Asylum grey */
 }
+
+hr {
+  border-top-color: #d9e8bd;
+}
+
 </tal:block>
