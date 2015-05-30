@@ -1,6 +1,12 @@
 Changelog
 =========
 
+2.2.2 (2015-05-29)
+------------------
+
+* Setting the background colour for the *Profile status*
+  notification
+
 2.2.1 (2015-04-23)
 ------------------
 
