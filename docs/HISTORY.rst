@@ -1,6 +1,11 @@
 Changelog
 =========
 
+2.2.3 (2015-06-02)
+------------------
+
+* Fixing the border colour for the title bar
+
 2.2.2 (2015-05-29)
 ------------------
 
