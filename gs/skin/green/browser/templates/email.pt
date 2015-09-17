@@ -411,10 +411,11 @@ h3.small,
 #gs-content-layout-footer {
     color: #669900;  /* Hibiscus dream */
     background: #f0f6e5; /* Asylum grey */
+    border-top: 6px solid #b4d07b;  /* Lime mist */
 }
 
 hr {
-  border-top-color: #d9e8bd;
+  border-bottom-color: #b4d07b;  /* Lime mist */
 }
 
 /* Colours for the gs.profile.status.base notification */
